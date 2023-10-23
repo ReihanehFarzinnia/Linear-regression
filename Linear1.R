@@ -69,7 +69,7 @@ gapminder  %>%
 
 ## Now lets see what these lines look like when we use our linear model:
 #
-#  y_i = b_0 + x_i*b_1 + e_i
+#  y_i | x_i = b_0 + x_i*b_1 + e_i
 # 
 #  where: 
 #         y_i = lifeExp,  x_i = gdpPercap 
