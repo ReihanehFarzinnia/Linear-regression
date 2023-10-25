@@ -28,6 +28,8 @@ library(ggplot2)
 #1.1
 lm_model <- lm(formula = lifeExp ~ year, data = gapminder)
 
+summary(lm_model)
+
 gapminder  %>%
   ggplot(aes(x = year, y = lifeExp)) +
   geom_point() +
@@ -48,7 +50,7 @@ print(change)
 #for by the linear model, you can calculate the coefficient of determination, 
 #often denoted as R-squared (R²). This statistic tells you how well the model 
 #explains the variance in the dependent variable (in this case, life expectancy).
-summary(lm_model)
+
 summary(lm_model)$r.squared
 
 #1.5
@@ -61,7 +63,8 @@ summary(lm_model)$r.squared
 #2.1
 fit_linear <- gapminder  %>%
   lm(formula = lifeExp ~ continent)
-print(fit_linear)
+
+summary(fit_linear)
 
 gapminder  %>%
   ggplot(aes(x = continent, y = lifeExp)) +
