@@ -171,3 +171,6 @@ summary(fit_quadratic)$r.squared - summary(fit_linear_gdp1000)$r.squared
 
 
 
+
+
+
